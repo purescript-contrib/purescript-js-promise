@@ -1,0 +1,30 @@
+{
+  "name": "purescript-web-encoding",
+  "homepage": "https://github.com/purescript-web/purescript-web-promise",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/purescript-web/purescript-web-promise.git"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "output",
+    "bower.json",
+    "package.json"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-prelude": "^4.0.0",
+    "purescript-effect": "^2.0.0",
+    "purescript-maybe": "^4.0.0",
+    "purescript-functions": "^4.0.0",
+    "purescript-exceptions": "^4.0.0"
+  }
+}
