@@ -3,7 +3,7 @@ exports.fromError = function(a) {
 };
 
 exports._toError = function(just, nothing, ref) {
-  if (rej instanceof Error) {
+  if (ref instanceof Error) {
     return just(ref);
   }
   return nothing;
