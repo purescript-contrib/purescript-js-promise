@@ -14,7 +14,18 @@ exports.finally = function(k, p) {
   return p.finally(k);
 };
 
-exports.resolve = Promise.resolve;
-exports.reject = Promise.reject;
-exports.all = Promise.all;
-exports.race = Promise.race;
+exports.resolve = function(a) {
+  return Promise.resolve(a);
+};
+
+exports.reject = function(a) {
+  return Promise.reject(a);
+};
+
+exports.all = function(a) {
+  return Promise.all(a);
+};
+
+exports.race = function(a) {
+  return Promise.race(a);
+};
