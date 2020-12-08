@@ -1,3 +1,5 @@
+"use strict";
+
 exports.new = function(k) {
   return new Promise(k);
 };

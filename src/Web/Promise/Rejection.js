@@ -1,3 +1,5 @@
+"use strict";
+
 exports.fromError = function(a) {
   return a;
 };
