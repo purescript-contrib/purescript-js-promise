@@ -21,10 +21,10 @@
     "output"
   ],
   "dependencies": {
-    "purescript-prelude": "^4.0.0",
-    "purescript-effect": "^2.0.0",
-    "purescript-maybe": "^4.0.0",
-    "purescript-functions": "^4.0.0",
-    "purescript-exceptions": "^4.0.0"
+    "purescript-prelude": "master",
+    "purescript-effect": "master",
+    "purescript-maybe": "master",
+    "purescript-functions": "master",
+    "purescript-exceptions": "master"
   }
 }
