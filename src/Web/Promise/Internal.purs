@@ -8,6 +8,8 @@ import Web.Promise.Rejection (Rejection)
 
 foreign import data Promise :: Type -> Type
 
+type role Promise representational
+
 foreign import new :: forall a. EffectFn1 (EffectFn2 (EffectFn1 a Unit) (EffectFn1 Rejection Unit) Unit) (Promise a)
 
 foreign import then_ :: forall a b. EffectFn2 (EffectFn1 a (Promise b)) (Promise a) (Promise b)
