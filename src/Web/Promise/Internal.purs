@@ -10,15 +10,15 @@ foreign import data Promise :: Type -> Type
 
 type role Promise representational
 
-foreign import new :: forall a. EffectFn1 (EffectFn2 (EffectFn1 a Unit) (EffectFn1 Rejection Unit) Unit) (Promise a)
+foreign import new :: forall a b. EffectFn1 (EffectFn2 (EffectFn1 a Unit) (EffectFn1 Rejection Unit) Unit) (Promise b)
 
-foreign import then_ :: forall a b. EffectFn2 (EffectFn1 a (Promise b)) (Promise a) (Promise b)
+foreign import then_ :: forall a b c. EffectFn2 (EffectFn1 a (Promise b)) (Promise a) (Promise c)
 
 foreign import catch :: forall a b. EffectFn2 (EffectFn1 Rejection (Promise b)) (Promise a) (Promise b)
 
 foreign import finally :: forall a. EffectFn2 (Effect (Promise Unit)) (Promise a) (Promise a)
 
-foreign import resolve :: forall a. a -> Promise a
+foreign import resolve :: forall a b. a -> Promise b
 
 foreign import reject :: forall a. Rejection -> Promise a
 
