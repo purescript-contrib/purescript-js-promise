@@ -5,26 +5,30 @@ Notable changes to this project are documented in this file. The format is based
 ## [Unreleased]
 
 Breaking changes:
+- Added support for PureScript 0.14 and dropped support for all previous versions (#6, #7)
 
 New features:
+- Add roles declarations to allow safe coercions (#4)
 
 Bugfixes:
+- Properly account for Promise flattening and add lazy boxing (#8)
 
 Other improvements:
+- Migrated CI to GitHub Actions and updated installation instructions to use Spago (#5)
+- Added a CHANGELOG.md file and pull request template (#9, #10)
 
 ## [v1.0.3](https://github.com/purescript-web/purescript-web-promise/releases/tag/v1.0.3) - 2020-03-30
 
-* Fixes eta-reduced FFI functions (@thomashoneyman)
+- Fixed eta-reduced FFI functions (@thomashoneyman)
 
 ## [v1.0.2](https://github.com/purescript-web/purescript-web-promise/releases/tag/v1.0.2) - 2020-01-14
 
-* Another FFI typo
+- Fixed typo in FFI
 
 ## [v1.0.1](https://github.com/purescript-web/purescript-web-promise/releases/tag/v1.0.1) - 2020-01-14
 
-* Fix typo in FFI.
+- Fixed typo in FFI
 
 ## [v1.0.0](https://github.com/purescript-web/purescript-web-promise/releases/tag/v1.0.0) - 2020-01-14
 
-Initial release
-
+- Initial release
