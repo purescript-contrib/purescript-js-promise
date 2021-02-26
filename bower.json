@@ -4,16 +4,8 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/purescript-web/purescript-web-promise.git"
+    "url": "https://github.com/purescript-web/purescript-web-promise.git"
   },
-  "ignore": [
-    "**/.*",
-    "bower_components",
-    "node_modules",
-    "output",
-    "bower.json",
-    "package.json"
-  ],
   "ignore": [
     "**/.*",
     "node_modules",
@@ -21,10 +13,11 @@
     "output"
   ],
   "dependencies": {
-    "purescript-prelude": "master",
-    "purescript-effect": "master",
-    "purescript-maybe": "master",
-    "purescript-functions": "master",
-    "purescript-exceptions": "master"
+    "purescript-effect": "^3.0.0",
+    "purescript-exceptions": "^5.0.0",
+    "purescript-functions": "^5.0.0",
+    "purescript-maybe": "^5.0.0",
+    "purescript-prelude": "^5.0.0",
+    "purescript-foldable-traversable": "^5.0.0"
   }
 }
