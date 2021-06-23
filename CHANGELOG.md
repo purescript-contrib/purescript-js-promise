@@ -7,11 +7,15 @@ Notable changes to this project are documented in this file. The format is based
 Breaking changes:
 
 New features:
-- Added `toPromise` and `fromPromise` helper functions to the `LazyPromise` module for convenient transformations between the `Promise` and `LazyPromise` types (#12 by @thomashoneyman)
 
 Bugfixes:
 
 Other improvements:
+
+## [v2.1.0](https://github.com/purescript-web/purescript-web-promise/releases/tag/v2.1.0) - 2021-06-23
+
+New features:
+- Added `toPromise` and `fromPromise` helper functions to the `LazyPromise` module for convenient transformations between the `Promise` and `LazyPromise` types (#12 by @thomashoneyman)
 
 ## [v2.0.0](https://github.com/purescript-web/purescript-web-promise/releases/tag/v2.0.0) - 2021-02-26
 
