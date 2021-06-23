@@ -7,6 +7,7 @@ Notable changes to this project are documented in this file. The format is based
 Breaking changes:
 
 New features:
+- Added `toPromise` and `fromPromise` helper functions to the `LazyPromise` module for convenient transformations between the `Promise` and `LazyPromise` types (#12 by @thomashoneyman)
 
 Bugfixes:
 
