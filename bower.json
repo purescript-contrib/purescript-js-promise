@@ -13,11 +13,11 @@
     "output"
   ],
   "dependencies": {
-    "purescript-effect": "^3.0.0",
-    "purescript-exceptions": "^5.0.0",
-    "purescript-functions": "^5.0.0",
-    "purescript-maybe": "^5.0.0",
-    "purescript-prelude": "^5.0.0",
-    "purescript-foldable-traversable": "^5.0.0"
+    "purescript-effect": "master",
+    "purescript-exceptions": "master",
+    "purescript-functions": "master",
+    "purescript-maybe": "master",
+    "purescript-prelude": "master",
+    "purescript-foldable-traversable": "master"
   }
 }
