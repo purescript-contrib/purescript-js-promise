@@ -7,7 +7,7 @@ module Web.Promise
 import Prelude
 
 import Effect (Effect)
-import Effect.Uncurried (mkEffectFn1, mkEffectFn2, runEffectFn1, runEffectFn2)
+import Effect.Uncurried (mkEffectFn1, mkEffectFn2, runEffectFn1, runEffectFn2, runEffectFn3)
 import Web.Promise.Internal (Promise, reject)
 import Web.Promise.Internal as P
 import Web.Promise.Rejection (Rejection)
@@ -26,6 +26,15 @@ new k = runEffectFn1 P.new $ mkEffectFn2 \onResolve onReject ->
 
 then_ :: forall a b c. Flatten b c => (a -> Effect (Promise b)) -> Promise a -> Effect (Promise c)
 then_ k p = runEffectFn2 P.then_ (mkEffectFn1 k) p
+
+thenOrCatch
+  :: forall a b c
+  . Flatten b c
+  => (a -> Effect (Promise b))
+  -> (Rejection -> Effect (Promise b))
+  -> Promise a
+  -> Effect (Promise c)
+thenOrCatch k c p = runEffectFn3 P.thenOrCatch (mkEffectFn1 k) (mkEffectFn1 c) p
 
 catch :: forall a b. (Rejection -> Effect (Promise b)) -> Promise a -> Effect (Promise b)
 catch k p = runEffectFn2 P.catch (mkEffectFn1 k) p

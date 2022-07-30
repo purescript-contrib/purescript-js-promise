@@ -3,7 +3,7 @@ module Web.Promise.Internal where
 import Prelude
 
 import Effect (Effect)
-import Effect.Uncurried (EffectFn1, EffectFn2)
+import Effect.Uncurried (EffectFn1, EffectFn2, EffectFn3)
 import Web.Promise.Rejection (Rejection)
 
 foreign import data Promise :: Type -> Type
@@ -13,6 +13,8 @@ type role Promise representational
 foreign import new :: forall a b. EffectFn1 (EffectFn2 (EffectFn1 a Unit) (EffectFn1 Rejection Unit) Unit) (Promise b)
 
 foreign import then_ :: forall a b c. EffectFn2 (EffectFn1 a (Promise b)) (Promise a) (Promise c)
+
+foreign import thenOrCatch :: forall a b c. EffectFn3 (EffectFn1 a (Promise b)) (EffectFn1 Rejection (Promise b)) (Promise a) (Promise c)
 
 foreign import catch :: forall a b. EffectFn2 (EffectFn1 Rejection (Promise b)) (Promise a) (Promise b)
 

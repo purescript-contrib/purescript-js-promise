@@ -12,6 +12,11 @@ Bugfixes:
 
 Other improvements:
 
+## [v3.1.0](https://github.com/purescript-web/purescript-web-promise/releases/tag/v3.0.0) - 2022-07-30
+
+New features:
+- Added `thenOrCatch` (#16 by @garyb)
+
 ## [v3.0.0](https://github.com/purescript-web/purescript-web-promise/releases/tag/v3.0.0) - 2022-04-27
 
 Breaking changes:

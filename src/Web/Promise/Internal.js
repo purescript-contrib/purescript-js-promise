@@ -7,6 +7,10 @@ export function then_(k, p) {
   return p.then(k);
 }
 
+export function thenOrCatch(k, c, p) {
+  return p.then(k, c);
+}
+
 const catchImpl = function (k, p) {
   return p.catch(k);
 };
