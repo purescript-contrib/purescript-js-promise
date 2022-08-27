@@ -1,16 +1,16 @@
-module Web.Promise
-  ( module Web.Promise
-  , module Web.Promise.Internal
-  , module Web.Promise.Rejection
+module Promise
+  ( module Promise
+  , module Promise.Internal
+  , module Promise.Rejection
   ) where
 
 import Prelude
 
 import Effect (Effect)
 import Effect.Uncurried (mkEffectFn1, mkEffectFn2, runEffectFn1, runEffectFn2, runEffectFn3)
-import Web.Promise.Internal (Promise, reject)
-import Web.Promise.Internal as P
-import Web.Promise.Rejection (Rejection)
+import Promise.Internal (Promise, reject)
+import Promise.Internal as P
+import Promise.Rejection (Rejection)
 
 type Executor a = (a -> Effect Unit) -> (Rejection -> Effect Unit) -> Effect Unit
 
@@ -29,7 +29,7 @@ then_ k p = runEffectFn2 P.then_ (mkEffectFn1 k) p
 
 thenOrCatch
   :: forall a b c
-  . Flatten b c
+   . Flatten b c
   => (a -> Effect (Promise b))
   -> (Rejection -> Effect (Promise b))
   -> Promise a

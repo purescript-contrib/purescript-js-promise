@@ -1,10 +1,10 @@
-module Web.Promise.Internal where
+module Promise.Internal where
 
 import Prelude
 
 import Effect (Effect)
 import Effect.Uncurried (EffectFn1, EffectFn2, EffectFn3)
-import Web.Promise.Rejection (Rejection)
+import Promise.Rejection (Rejection)
 
 foreign import data Promise :: Type -> Type
 

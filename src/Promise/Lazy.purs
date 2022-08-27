@@ -1,4 +1,4 @@
-module Web.Promise.Lazy where
+module Promise.Lazy where
 
 import Prelude
 
@@ -7,8 +7,8 @@ import Data.Traversable (traverse)
 import Effect (Effect)
 import Effect.Class (class MonadEffect)
 import Effect.Uncurried (mkEffectFn1, mkEffectFn2, runEffectFn1, runEffectFn2)
-import Web.Promise (class Flatten, Executor, Rejection)
-import Web.Promise.Internal as P
+import Promise (class Flatten, Executor, Rejection)
+import Promise.Internal as P
 
 -- | A trivial box that adds a layer between promises to prevent automatic flattening.
 data Box a = Box a

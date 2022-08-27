@@ -1,4 +1,4 @@
-module Web.Promise.Rejection
+module Promise.Rejection
   ( Rejection
   , fromError
   , toError
