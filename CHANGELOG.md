@@ -11,3 +11,8 @@ New features:
 Bugfixes:
 
 Other improvements:
+
+
+## [v1.0.0](https://github.com/purescript-contrib/purescript-js-promise/releases/tag/v1.0.0) - 2022-09-01
+
+Initial release, forked from `purescript-web-promise` and intended as its replacement from now on.
