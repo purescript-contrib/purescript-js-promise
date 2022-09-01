@@ -1,10 +1,10 @@
 {
-  "name": "purescript-web-promise",
-  "homepage": "https://github.com/purescript-web/purescript-web-promise",
+  "name": "purescript-js-promise",
+  "homepage": "https://github.com/purescript-contrib/purescript-js-promise",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/purescript-web/purescript-web-promise.git"
+    "url": "https://github.com/purescript-contrib/purescript-js-promise.git"
   },
   "ignore": [
     "**/.*",
